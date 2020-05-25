@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590345029889.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "77C2FC3",
+    "lastKnownWriteTime" : 1369173620408,
+    "last_content_update" : 1590345029889,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "4691CB52",
+        "caption" : "education_Wage",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=education_Wage&cache_key=4691CB52",
+        "displayedObservations" : 140,
+        "environment" : "",
+        "expression" : "education_Wage",
+        "object" : "education_Wage",
+        "preview" : 0,
+        "totalObservations" : 140,
+        "variables" : 3
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 14,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

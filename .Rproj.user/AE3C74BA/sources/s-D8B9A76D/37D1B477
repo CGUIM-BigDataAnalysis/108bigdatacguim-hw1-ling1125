@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590328422726.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "37D1B477",
+    "lastKnownWriteTime" : 1369088838960,
+    "last_content_update" : 1590328422726,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "5B855124",
+        "caption" : "WageDT",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WageDT&cache_key=5B855124",
+        "displayedObservations" : "53",
+        "environment" : "",
+        "expression" : "WageDT",
+        "object" : "WageDT",
+        "preview" : "0",
+        "totalObservations" : "53",
+        "variables" : "4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590327054434.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B738DDB",
+    "lastKnownWriteTime" : 1369080467744,
+    "last_content_update" : 1590327054434,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "67c494bc11c24d75a12330aae84495b9",
+        "name" : "WageDT_split",
+        "title" : "WageDT_split"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

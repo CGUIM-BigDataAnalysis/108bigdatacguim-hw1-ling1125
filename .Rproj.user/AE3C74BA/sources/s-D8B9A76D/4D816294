@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590330223493.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4D816294",
+    "lastKnownWriteTime" : 1369079634768,
+    "last_content_update" : 1590330223493,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "31AC7A68",
+        "caption" : "gender_Wage_desc",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=gender_Wage_desc&cache_key=31AC7A68",
+        "displayedObservations" : 140,
+        "environment" : "",
+        "expression" : "gender_Wage_desc",
+        "object" : "gender_Wage_desc",
+        "preview" : 0,
+        "totalObservations" : 140,
+        "variables" : 2
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

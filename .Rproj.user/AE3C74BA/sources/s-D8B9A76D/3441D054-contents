@@ -1,0 +1,212 @@
+library(readr)
+X105 <- read_csv("C:/Users/Yu Ling/Desktop/105.csv")
+View(X105)
+library(readr)
+X107 <- read_csv("C:/Users/Yu Ling/Desktop/107.csv")
+View(X107)
+View(X107)
+library(readr)
+X105 <- read_csv("C:/Users/Yu Ling/Desktop/105.csv")
+View(X105)
+X107 <- read_csv("C:/Users/Yu Ling/Desktop/107.csv")
+View(X107)
+View(X105)
+library(readr)
+X104 <- read_csv("C:/Users/Yu Ling/Desktop/104.csv")
+View(X104)
+library(readr)
+X107 <- read_csv("C:/Users/Yu Ling/Desktop/107.csv")
+View(X107)
+tail(x104Add)
+x104Add<-Cbind(X104,c(1:114,"ID"))
+x104Add<-cbind(X104,c(1:114,"ID"))
+tail(x104Add)
+View(X107)
+ID<-c(1:114)
+x104Add <-cbind(x104,ID)
+x104Add <-cbind(X104,ID)
+ID<-c(1:140)
+x104Add <-cbind(X104,ID)
+tail(x104Add)
+x107Add <-cbind(X107,ID)
+tail(x107Add)
+inner_join(x104Add,x107Add,dy = "ID")
+inner_join(x104Add,x107Add,by = "ID")
+x107Add <-cbind(X107,ID)
+merge <- inner_join(x104Add,x107Add,by = "ID")
+library(jsonlite)
+library(dplyr)
+library(readr)
+X104 <- read_csv("C:/Users/Yu Ling/Desktop/104.csv")
+View(X104)
+x104Add <-cbind(X104,ID)
+x107Add <-cbind(X107,ID)
+merge <- inner_join(x104Add,x107Add,by = "ID")
+View(merge)
+a <- inner_join(x104Add,x107Add,by = "ID")
+x107Add <-cbind(X107,ID)
+a <- inner_join(x104Add,x107Add,by = "ID")
+View(a)
+View(X107)
+View(X104)
+View(X104)
+X104$大職業別<-gsub("部門", "", X104$大職業別)
+View(X104)
+View(X107)
+X104$大職業別<-gsub("、", "_", X104$大職業別)
+View(X104)
+X104$大職業別<-gsub("教育服務業", "教育業", X104$大職業別)
+View(X104)
+X104$大職業別<-gsub("教育服務業", "教育業", X104$大職業別)
+X104$大職業別<-gsub("醫療保健服務業", "醫療保健業", X104$大職業別)
+X104$大職業別<-gsub("資訊及通訊傳播業", "出版、影音製作、傳播及資通訊服務業", X104$大職業別)
+X104$大職業別<-gsub("營造業", "營建工程", X104$大職業別)
+View(X104)
+x104clean <- X104[,c(2,11)]
+x107clean <- X107[,c(2,11)]
+x104clean$大職業別<-gsub("部門", "", x104clean$大職業別)
+x104clean$大職業別<-gsub("、", "_", x104clean$大職業別)
+x104clean$大職業別<-gsub("教育服務業", "教育業", x104clean$大職業別)
+x104clean$大職業別<-gsub("醫療保健服務業", "醫療保健業", x104clean$大職業別)
+x104clean$大職業別<-gsub("資訊及通訊傳播業", "出版、影音製作、傳播及資通訊服務業", x104clean$大職業別)
+x104clean$大職業別<-gsub("營造業", "營建工程", x104clean$大職業別)
+x104clean <- X104[,c(2,11)]
+x104clean$大職業別<-gsub("營造業", "營建工程", x104clean$大職業別)
+x104clean
+merge(x104clean,x107clean,by="大職業別")
+Wage <- merge(x104clean,x107clean,by="大職業別")
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+Wage
+WageDT <- data.table(Wage)
+install.packages("data.table")
+WageDT <- data.table(Wage)
+str(Wage)
+as.numeric(Wage$`104年大學畢業薪資`)
+as.numeric(3)
+Wage <- inner_join(x104clean,x107clean,by="大職業別")
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+str(Wage)
+Wage
+names(Wage)[3] <- "107年大學畢業薪資"
+WageDF <- data.frame(name = "大職業別",url ="104年大學畢業薪資",price = "107年大學畢業薪資",stringsAsFactors = F)
+View(Wage)
+library(readr)
+X104 <- read_csv("C:/Users/Yu Ling/Desktop/104.csv")
+View(X104)
+X107 <- read_csv("C:/Users/Yu Ling/Desktop/107.csv")
+View(X107)
+x104clean <- X104[,c(2,11)]
+x107clean <- X107[,c(2,11)]
+x104clean$大職業別<-gsub("部門", "", x104clean$大職業別)
+x104clean$大職業別<-gsub("、", "_", x104clean$大職業別)
+x104clean$大職業別<-gsub("教育服務業", "教育業", x104clean$大職業別)
+x104clean$大職業別<-gsub("醫療保健服務業", "醫療保健業", x104clean$大職業別)
+x104clean$大職業別<-gsub("資訊及通訊傳播業", "出版、影音製作、傳播及資通訊服務業", x104clean$大職業別)
+x104clean$大職業別<-gsub("營造業", "營建工程", x104clean$大職業別)
+Wage <- inner_join(x104clean,x107clean,by="大職業別")
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+WageDF <- data.frame(col1 = Wage$大職業別,col2 = Wage$`104年大學畢業薪資`,col3 = Wage$`107年大學畢業薪資`)
+library(readr)
+X104 <- read_csv("C:/Users/Yu Ling/Desktop/104.csv")
+View(X104)
+X107 <- read_csv("C:/Users/Yu Ling/Desktop/107.csv")
+View(X107)
+x104clean <- X104[,c(2,11)]
+x107clean <- X107[,c(2,11)]
+x104clean$大職業別<-gsub("部門", "", x104clean$大職業別)
+x104clean$大職業別<-gsub("、", "_", x104clean$大職業別)
+x104clean$大職業別<-gsub("教育服務業", "教育業", x104clean$大職業別)
+x104clean$大職業別<-gsub("醫療保健服務業", "醫療保健業", x104clean$大職業別)
+x104clean$大職業別<-gsub("資訊及通訊傳播業", "出版、影音製作、傳播及資通訊服務業", x104clean$大職業別)
+x104clean$大職業別<-gsub("營造業", "營建工程", x104clean$大職業別)
+Wage <- inner_join(x104clean,x107clean,by="大職業別")
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+View(data.frame(Wage))
+data.frame(Wage)
+Wage_table <- data.frame(Wage)
+Wage_table
+as.numeric(Wage_table)
+as.numeric(Wage)
+as.numeric(Wage$`104年大學畢業薪資`)
+Wage <-gsub("...|-", "", Wage)
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+Wage_table <- data.frame(Wage)
+names(Wage)[3] <- "107年大學畢業薪資"
+as.numeric(Wage)
+Wage
+Wage <-gsub("…|—", "", Wage)
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+as.numeric(Wage)
+Wage
+Wage <-gsub("…", "", Wage)
+Wage <-gsub("—", "", Wage)
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+as.numeric(Wage)
+Wage
+View(Wage_table)
+library(readr)
+X104 <- read_csv("C:/Users/Yu Ling/Desktop/104.csv")
+X107 <- read_csv("C:/Users/Yu Ling/Desktop/107.csv")
+x104clean <- X104[,c(2,11)]
+x107clean <- X107[,c(2,11)]
+x104clean$大職業別<-gsub("部門", "", x104clean$大職業別)
+x104clean$大職業別<-gsub("、", "_", x104clean$大職業別)
+x104clean$大職業別<-gsub("教育服務業", "教育業", x104clean$大職業別)
+x104clean$大職業別<-gsub("醫療保健服務業", "醫療保健業", x104clean$大職業別)
+x104clean$大職業別<-gsub("資訊及通訊傳播業", "出版、影音製作、傳播及資通訊服務業", x104clean$大職業別)
+x104clean$大職業別<-gsub("營造業", "營建工程", x104clean$大職業別)
+Wage <- inner_join(x104clean,x107clean,by="大職業別")
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+Wage$`104年大學畢業薪資` <- gsub("—","",Wage$`104年大學畢業薪資`)
+View(Wage)
+Wage$`104年大學畢業薪資` <- gsub("—|…","",Wage$`104年大學畢業薪資`)
+Wage
+Wage$`104年大學畢業薪資` <- gsub(—|…,"",Wage$`104年大學畢業薪資`)
+Wage$`104年大學畢業薪資` <- gsub("—|…","",Wage$`104年大學畢業薪資`)
+Wage
+View(Wage)
+Wage$`107年大學畢業薪資` <- gsub("—|…","",Wage$`107年大學畢業薪資`)
+Wage
+View(Wage)
+as.numeric(Wage)
+as.numeric(Wage$`104年大學畢業薪資`)
+Wage <- as.numeric(Wage$`104年大學畢業薪資`)
+Wage <- as.numeric(Wage$`107年大學畢業薪資`)
+Wage <- as.numeric(Wage$`107年大學畢業薪資`)
+Wage$`104年大學畢業薪資` <- as.numeric(Wage$`104年大學畢業薪資`)
+Wage$`107年大學畢業薪資` <- as.numeric(Wage$`107年大學畢業薪資`)
+Wage$`107年大學畢業薪資` <- gsub("—|…","",Wage$`107年大學畢業薪資`)
+gsub("—|…","",Wage$`107年大學畢業薪資`)
+Wage$`107年大學畢業薪資` <- gsub("—|…","",Wage$`107年大學畢業薪資`)
+Wage$`107年大學畢業薪資` <- gsub("—","",Wage$`107年大學畢業薪資`)
+Wage$`107年大學畢業薪資` <- gsub("—"," ",Wage$`107年大學畢業薪資`)
+Wage <- inner_join(x104clean,x107clean,by="大職業別")
+names(Wage)[2] <- "104年大學畢業薪資"
+names(Wage)[3] <- "107年大學畢業薪資"
+Wage$`107年大學畢業薪資` <- gsub("—","",Wage$`107年大學畢業薪資`)
+Wage$`104年大學畢業薪資` <- as.numeric(Wage$`104年大學畢業薪資`)
+View(Wage)
+Wage$`107年大學畢業薪資` <- gsub("—|…","",Wage$`107年大學畢業薪資`)
+Wage$`104年大學畢業薪資` <- as.numeric(Wage$`104年大學畢業薪資`)
+Wage$`104年大學畢業薪資` <- gsub("—|…","",Wage$`104年大學畢業薪資`)
+Wage$`107年大學畢業薪資` <- gsub("—|…","",Wage$`107年大學畢業薪資`)
+Wage$`104年大學畢業薪資` <- as.numeric(Wage$`104年大學畢業薪資`)
+Wage$`107年大學畢業薪資` <- as.numeric(Wage$`107年大學畢業薪資`)
+Wage
+str(Wage)
+Wage
+Wage$WageAdd <- cbind(Wage$`107年大學畢業薪資`/Wage$`104年大學畢業薪資`)
+Wage
+View(Wage)
+Wage[ Wage$WageAdd>1.05, ]
+subset(Wage,Wage$WageAdd>1.05)
+data.frame(subset(Wage,Wage$WageAdd>1.05))
+View(Wage)

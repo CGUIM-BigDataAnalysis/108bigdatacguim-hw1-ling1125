@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590332431940.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3077ED5E",
+    "lastKnownWriteTime" : 1369079634768,
+    "last_content_update" : 1590332431940,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "883F75A9",
+        "caption" : "WageDT10",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WageDT10&cache_key=883F75A9",
+        "displayedObservations" : 10,
+        "environment" : "",
+        "expression" : "WageDT10",
+        "object" : "WageDT10",
+        "preview" : 0,
+        "totalObservations" : 10,
+        "variables" : 4
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

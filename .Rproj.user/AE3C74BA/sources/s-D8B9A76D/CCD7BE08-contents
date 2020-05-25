@@ -91,8 +91,8 @@ education_WageDT10 <- head(education_WageDT_desc,10)
 knitr::kable(education_WageDT10[,c(1,4)])
 #第四題
 #4.1
-Mine <- filter(education_Wage,大職業別 %in% c("服務業-技術員及助理專業人員","金融及保險業-專業人員","金融及保險業-技術員及助理專業人員","教育業-專業人員")))
-knitr::kable(Mine[,c(1,4)])
+Mine_interest <- filter(education_Wage,大職業別 %in% c("服務業-技術員及助理專業人員","金融及保險業-專業人員","金融及保險業-技術員及助理專業人員","教育業-專業人員")) %>% select(c(1,2,3,4))
+knitr::kable(Mine_interest)
 #4.2
 Mine$"薪資差異" <- Mine$`107年研究所畢業薪資`-Mine$`107年大學畢業薪資`
 knitr::kable(Mine)

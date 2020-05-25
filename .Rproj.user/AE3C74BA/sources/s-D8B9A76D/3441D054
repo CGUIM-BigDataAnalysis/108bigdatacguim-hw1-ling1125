@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590346324562.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3150839727",
+    "id" : "3441D054",
+    "lastKnownWriteTime" : 1590076802,
+    "last_content_update" : 1590076802,
+    "path" : "~/GitHub/108bigdatacguim-hw1-ling1125/.Rhistory",
+    "project_path" : ".Rhistory",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 15,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_history"
+}
